@@ -1,0 +1,25 @@
+html{
+    margin: 0;
+    padding: 0;
+    background-color: #1E201E;
+}
+
+.title{
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    color: #FF0000;
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #FF0000;
+    font-size: 15px;
+}
+
+.container{
+    text-align: center;
+    
+}

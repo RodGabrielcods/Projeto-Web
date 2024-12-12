@@ -1,25 +1,49 @@
+@font-face {
+    font-family: face;
+    src: url(fontes/Minecrafter.Reg.ttf);
+}
+
 html{
     margin: 0;
     padding: 0;
-    background-color: #1E201E;
-}
+    background-image: url(img/mineLOgin.jpg);
+    background-size: 100%;
 
-.title{
-    font-family: "Anton SC", sans-serif;
+    font-family: face;
     font-weight: 400;
     font-style: normal;
     font-size: 2rem;
-    color: #FF0000;
+    color: #52a535;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 input{
     background-color: transparent;
     border: none;
-    border-bottom: 3px solid #FF0000;
+    border-bottom: 3px solid #52a535;
     font-size: 15px;
+    color: #52a535;
+
+    font-family: face;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: #52a535;
 }
 
 .container{
     text-align: center;
-    
+}   
+
+.jogar{
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-family: face;
+    color: white;
+    padding: 0.5rem;
 }

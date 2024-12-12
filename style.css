@@ -1,5 +1,10 @@
+@font-face {
+    font-family: face;
+    src: url(fontes/Monocraft.ttf);
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: face;
     margin: 0;
     padding: 0;
     background-image: url("img/minecraft_background.jpg");

@@ -19,7 +19,7 @@ html{
 body{
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding-top: 7rem;
 }
 
 input{
@@ -28,6 +28,7 @@ input{
     border-bottom: 3px solid #52a535;
     font-size: 15px;
     color: #52a535;
+    margin: 2rem;
 
     font-family: face;
     font-weight: 400;

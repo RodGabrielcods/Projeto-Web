@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url("minecraft_background.jpg");
+    background-image: url("img/minecraft_background.jpg");
     background-size: 100%;
     color: #4c4c4c;
 }
@@ -115,7 +115,6 @@ main {
     background-color: #c6c6c6;
     max-width: 500px;
     width: 100%;
-    padding: 25px 0 25px 0;
     border: 5px ridge #c6c6c6;
     border-bottom-style: none;
     margin: 0;

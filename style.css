@@ -115,10 +115,14 @@ main {
     background-color: #c6c6c6;
     max-width: 500px;
     width: 100%;
+    padding: 10px 0 10px 0;
     border: 5px ridge #c6c6c6;
     border-bottom-style: none;
     margin: 0;
     padding-left: 0.6rem;
+}
+h3 img {
+    margin-right: 0.5rem;
 }
 
 label {

@@ -1,10 +1,10 @@
 @font-face {
-    font-family: face;
+    font-family: face2;
     src: url(fontes/Monocraft.ttf);
 }
 
 body {
-    font-family: face;
+    font-family: face2;
     margin: 0;
     padding: 0;
     background-image: url("img/minecraft_background.jpg");

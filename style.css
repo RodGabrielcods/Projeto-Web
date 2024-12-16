@@ -3,6 +3,20 @@
     src: url(fontes/Monocraft.ttf);
 }
 
+@font-face {
+    font-family: title;
+    src: url(fontes/Minecrafter.Reg.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+span {
+    font-family: title;
+    font-size: 1.5rem;
+}
+
 body {
     font-family: textos;
     margin: 0;
@@ -10,6 +24,7 @@ body {
     background-image: url("img/minecraft_background.jpg");
     background-size: 100%;
     color: #4c4c4c;
+    box-sizing: border;
 }
 
 
@@ -23,13 +38,14 @@ header {
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-family: title;
+    font-size: 3rem;
     font-weight: bold;
     margin: 0;
 }
 
 header p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin: 0.5rem 0 0;
     color: #f9f9f9;
 }
@@ -91,7 +107,7 @@ button:hover {
 
 main {
     padding: 2rem;
-    max-width: 80%;
+    max-width: 1220px;
     margin: 0 auto;
     background: #1a1a1a;
     border-radius: 10px;
@@ -145,6 +161,7 @@ label {
 #enviar-btn {
     background-color: #c6c6c6;
     border: 2px outset #f7f7f7;
+    
 }
 
 input[type="radio"] {

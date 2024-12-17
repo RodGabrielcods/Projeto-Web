@@ -16,14 +16,14 @@ function testar() {
     console.log(radios)
 
     radios.forEach(e => {
-        if(e.checked) {
-            if(e.value == "esqueleto") {
+        if (e.checked) {
+            if (e.value == "esqueleto") {
                 contEsqueleto++
-            } else if(e.value == "zumbi") {
+            } else if (e.value == "zumbi") {
                 contZumbi++
-            } else if(e.value == "aranha") {
+            } else if (e.value == "aranha") {
                 contAranha++
-            }  else if(e.value == "creeper") {
+            } else if (e.value == "creeper") {
                 contCreeper++
             }
         }
@@ -37,21 +37,37 @@ function testar() {
     let maior = 0
     let pagina
 
-    if(contAranha > maior) {
+    if (contAranha > maior) {
         pagina = 'aranha'
         maior = contAranha
-    } else if (contCreeper > maior) {
+    }
+
+    if (contCreeper > maior) {
         pagina = 'creeper'
         maior = contCreeper
-    } else if (contEsqueleto > maior) {
+    }
+
+    if (contEsqueleto > maior) {
         pagina = 'esqueleto'
         maior = contEsqueleto
-    } else if (contZumbi > maior) {
+    }
+
+    if (contZumbi > maior) {
         pagina = 'zumbi'
         maior = contZumbi
     }
 
-    setTimeout(() => {
-        window.open(pagina + '.html')
-    }, 5000);
+    let contador = 5; 
+    let contadorElemento = document.querySelector('.contador p');
+    contadorElemento.textContent = `Redirecionando em ${contador} segundos...`;
+
+    let intervalo = setInterval(() => {
+        contador--;
+        contadorElemento.textContent = `Redirecionando em ${contador} segundos...`;
+
+        if (contador === 0) {
+            clearInterval(intervalo);
+            window.location.href = pagina + '.html';
+        }
+    }, 1000);
 }

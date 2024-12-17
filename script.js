@@ -57,17 +57,19 @@ function testar() {
         maior = contZumbi
     }
 
-    let contador = 5; 
-    let contadorElemento = document.querySelector('.contador p');
-    contadorElemento.textContent = `Redirecionando em ${contador} segundos...`;
-
-    let intervalo = setInterval(() => {
-        contador--;
+    if (contAranha + contCreeper + contEsqueleto + contZumbi == 10) {
+        let contador = 5;
+        let contadorElemento = document.querySelector('.contador p');
         contadorElemento.textContent = `Redirecionando em ${contador} segundos...`;
+
+        let intervalo = setInterval(() => {
+            contador--;
+            contadorElemento.textContent = `Redirecionando em ${contador} segundos...`;
 
         if (contador === 0) {
             clearInterval(intervalo);
             window.open(pagina + ".html")
         }
     }, 1000);
+
 }

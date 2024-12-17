@@ -1,3 +1,7 @@
+function sair() {
+    window.close()
+}
+
 function testar() {
     let contEsqueleto = 0
     let contCreeper = 0

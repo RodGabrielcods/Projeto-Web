@@ -1,9 +1,3 @@
-function sair() {
-    window.close()
-}
-function login() {
-    window.location.href = 'index.html';
-}
 function testar() {
     let contEsqueleto = 0
     let contCreeper = 0

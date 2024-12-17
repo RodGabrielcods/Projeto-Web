@@ -24,12 +24,20 @@
                 <button class="jogar" onclick="login()">Jogar o Quiz</button>
             </div>
 
+            <div>
+                <button class="jogar" onclick="tocarMusica()">Iniciar Musica</button>
+            </div>
+
             <button class="jogar" onclick="sair()">Sair</button>
 
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="scriptLogin.js"></script>
+
+    <audio id="musica" loop>
+        <source src="sons/audio.mp3" type="audio/mpeg">
+    </audio>
 
 </body>
 

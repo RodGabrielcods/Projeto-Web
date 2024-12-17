@@ -101,6 +101,10 @@ label {
     padding: 25px 0 25px 0;
 }
 
+label:hover{
+    background-color: #218306;
+}
+
 input[type="radio"] {
     margin-right: 0.5rem;
     accent-color: #218306;

@@ -70,4 +70,5 @@ function testar() {
             window.open(pagina + ".html")
         }
     }, 1000);
+
 }

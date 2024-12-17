@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="scripts.js" defer></script>
     <title>Quiz Minecraft</title>
 </head>
 
@@ -13,6 +12,7 @@
     <header>
         <h1>Quiz Minecraft</h1>
         <p>Descubra que monstro você seria no Minecraft!</p>
+        <p><button class="jogar" onclick="tocarMusica()">Iniciar Musica</button></p>
     </header>
     <main>
         <form id="quiz-form">
@@ -147,10 +147,15 @@
             </div>
             <button type="button" class="jogar" onclick="testar()">Enviar Respostas</button>
             <div class="contador">
-                <p>Redirecionando em 5 segundos...</p>
+                <p></p>
             </div>
         </form>
     </main>
+
+    <audio id="musica" autoplay loop muted>
+        <source src="sons/audio.mp3" type="audio/mpeg">
+    </audio>
+
     <script src="script.js"></script>
 </body>
 

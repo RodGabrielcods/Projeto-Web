@@ -3,9 +3,12 @@
     src: url(fontes/Minecrafter.Reg.ttf);
 }
 
-html{
+* {
     margin: 0;
     padding: 0;
+}
+
+html {
     background-image: url(img/mineLOgin.jpg);
     background-size: 100%;
     background-size: cover;
@@ -17,35 +20,20 @@ html{
     color: #52a535;
 }
 
-body{
+.botoes {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin-top: 5.5rem;
 }
 
-input{
-    background-color: transparent;
-    border: none;
-    border-bottom: 3px solid #52a535;
-    font-size: 15px;
-    color: #52a535;
-    margin: 2rem;
-
-    font-family: title;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1rem;
-    color: #52a535;
-}
-
-input:hover{
-    border: solid 2px #52a535;
-}
-
-.container{
+.container {
+    margin-top: 0.5rem;
     text-align: center;
-}   
+}
 
-.jogar{
+.jogar {
     margin-top: 2rem;
     font-size: 1rem;
     font-family: title;

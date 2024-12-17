@@ -29,11 +29,6 @@ function testar() {
         }
     })
 
-    let porcAranha = (contAranha / 4) * 100
-    let porcEsqueleto = (contEsqueleto / 4) * 100
-    let porcZumbi = (contZumbi / 4) * 100
-    let porcCrepper = (contCreeper / 4) * 100
-
     localStorage.setItem('aranha', contAranha)
     localStorage.setItem('esqueleto', contEsqueleto)
     localStorage.setItem('zumbi', contZumbi)
@@ -75,5 +70,4 @@ function testar() {
             window.open(pagina + ".html")
         }
     }, 1000);
-
 }

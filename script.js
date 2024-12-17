@@ -1,3 +1,10 @@
+function tocarMusica() {
+    const audio = document.getElementById('musica');
+    audio.muted = false;
+    audio.volume = 0.5;
+    audio.play();
+}
+
 let radios = document.querySelectorAll('input[type="radio"]')
 radios.forEach(e => {
     if (e.checked) {

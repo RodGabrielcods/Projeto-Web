@@ -24,9 +24,7 @@ body {
     background-image: url("img/minecraft_background.jpg");
     background-size: 100%;
     color: #4c4c4c;
-    box-sizing: border;
 }
-
 
 header {
     background-color: #171615; 

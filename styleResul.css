@@ -1,30 +1,46 @@
+@font-face {
+    font-family: title;
+    src: url(fontes/Minecrafter.Reg.ttf);
+}
+@font-face {
+    font-family: textos;
+    src: url(fontes/Monocraft.ttf);
+}
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: textos;
+    background-image: url(img/Fundo_terra.webp);
+    background-size: 100%;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    color: #4c4c4c;
 }
 .result-container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    margin: 0 auto;
+    background: #1a1a1a;
+    box-shadow: 0 4px 8px rgba(62, 52, 52, 0.2);
     max-width: 600px;
     width: 100%;
     text-align: center;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    border: 15px ridge #c6c6c6;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 h1 {
-    color: #333;
+    font-family: title;
+    color: white;
+    letter-spacing: 2.5px;
 }
 .descricao {
     margin-top: 10px;
     margin-bottom: 20px;
     font-size: 1.2rem;
-    color: #555;
 }
 table {
     width: 100%;
@@ -36,11 +52,13 @@ table th, table td {
     text-align: center;
     border: 1px solid #ddd;
 }
+tr {
+    background-color: #c6c6c6;
+
+}
 table th {
     background-color: #333;
-    color: #fff;
 }
 .highlight {
     font-weight: bold;
-    color: #4CAF50;
 }

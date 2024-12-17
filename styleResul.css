@@ -2,10 +2,16 @@
     font-family: title;
     src: url(fontes/Minecrafter.Reg.ttf);
 }
+
 @font-face {
     font-family: textos;
     src: url(fontes/Monocraft.ttf);
 }
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: textos;
     background-image: url(img/Fundo_terra.webp);
@@ -18,6 +24,7 @@ body {
     min-height: 100vh;
     color: white;
 }
+
 .result-container {
     padding: 2rem;
     margin: 0 auto;
@@ -33,36 +40,43 @@ body {
     padding-bottom: 2rem;
     border-radius: 20px;
 }
+
 h1 {
     font-family: title;
     color: white;
     letter-spacing: 2.5px;
 }
+
 .descricao {
     margin-top: 10px;
     margin-bottom: 20px;
     font-size: 1.2rem;
 }
+
 table {
     width: 100%;
 }
+
 td {
     padding: 10px;
     text-align: center;
     border: 2px solid #ccc;
     background-color: #3a3a3a;
 }
+
 th {
     background-color: #c6c6c6;
     border: 5px ridge #c6c6c6;
     padding: 1rem;
     color: #4c4c4c;
 }
+
 .highlight {
     font-weight: bold;
     color: #52a535;
 }
-.jogar{
+
+.jogar {
     margin-left: 0;
     margin-top: 2rem;
     font-size: 0.9rem;

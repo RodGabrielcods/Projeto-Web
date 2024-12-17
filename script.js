@@ -1,3 +1,10 @@
+function tocarMusica() {
+    const audio = document.getElementById('musica');
+    audio.muted = false;
+    audio.volume = 0.5;
+    audio.play();
+}
+
 function testar() {
     let contEsqueleto = 0
     let contCreeper = 0

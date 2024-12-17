@@ -38,22 +38,22 @@ function testar() {
     let pagina
 
     if (contAranha > maior) {
-        pagina = 'aranha'
+        pagina = "aranha"
         maior = contAranha
     }
 
     if (contCreeper > maior) {
-        pagina = 'creeper'
+        pagina = "creeper"
         maior = contCreeper
     }
 
     if (contEsqueleto > maior) {
-        pagina = 'esqueleto'
+        pagina = "esqueleto"
         maior = contEsqueleto
     }
 
     if (contZumbi > maior) {
-        pagina = 'zumbi'
+        pagina = "zumbi"
         maior = contZumbi
     }
 
@@ -67,7 +67,7 @@ function testar() {
 
         if (contador === 0) {
             clearInterval(intervalo);
-            window.location.href = pagina + '.html';
+            window.open(pagina + ".html")
         }
     }, 1000);
 }

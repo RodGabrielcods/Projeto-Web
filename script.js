@@ -66,10 +66,10 @@ function testar() {
             contador--;
             contadorElemento.textContent = `Redirecionando em ${contador} segundos...`;
 
-        if (contador === 0) {
-            clearInterval(intervalo);
-            window.open(pagina + ".html")
-        }
-    }, 1000);
-
+            if (contador === 0) {
+                clearInterval(intervalo);
+                window.open(pagina + ".html")
+            }
+        }, 1000)
+    }
 }

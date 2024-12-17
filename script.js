@@ -1,10 +1,3 @@
-function login() {
-    window.location.href = 'index.html';
-}
-
-function result() {
-    window.location.href = 'resul.html';
-}
 function testar() {
     let contEsqueleto = 0
     let contCreeper = 0

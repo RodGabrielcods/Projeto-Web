@@ -4,154 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="scripts.js" defer></script>
-    <title>Quiz Minecraft</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="styleLogin.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/minecraftia" type="text/css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+    </style>
 </head>
 
 <body>
-    <header>
-        <h1>Quiz Minecraft</h1>
-        <p>Descubra que monstro você seria no Minecraft!</p>
-    </header>
-    <main>
-        <form id="quiz-form">
-            <div class="questao">
-                <h3><strong><span>1.</span> Como você reage em situações inesperadas?</strong></h3>
-                <div class="questao-border">
-                    <label><input type="radio" name="a1" value="aranha" required> Tento escalar a situação e achar um
-                        jeito criativo de resolver.</label>
-                    <label><input type="radio" name="a1" value="esqueleto" required> Mantenho distância e observo antes
-                        de agir.</label>
-                    <label><input type="radio" name="a1" value="creeper" required> Faço algo explosivo e inesperado para
-                        resolver logo. </label>
-                    <label><input type="radio" name="a1" value="zumbi" required> Encaro de frente, sem pensar muito nas
-                        consequências.</label>
-                </div>
+    <div class="container">
+        <img src="img/Sample.png" alt="">
+        <div class="botoes">
+            <div>
+                <button class="jogar" onclick="login()">Jogar o Quiz</button>
             </div>
-            <div class="questao">
-                <h3><strong><span>2.</span> Qual dessas características combina mais com você?</strong></h3>
-                <div class="questao-border">
-                    <label><input type="radio" name="a2" value="aranha" required> Sou flexível e sempre encontro um
-                        jeito de me adaptar.</label>
-                    <label><input type="radio" name="a2" value="esqueleto" required> Sou calculista e gosto de ter tudo
-                        planejado.</label>
-                    <label><input type="radio" name="a2" value="creeper" required> Sou imprevisível e as pessoas nunca
-                        sabem o que esperar de mim.</label>
-                    <label><input type="radio" name="a2" value="zumbi" required> Sou persistente e nunca desisto do que
-                        quero.</label>
-                </div>
+
+            <div>
+                <button class="jogar" onclick="tocarMusica()">Iniciar Musica</button>
             </div>
-            <div class="questao">
-                <h3><strong><span>3.</span> Como você prefere resolver conflitos?</strong></h3>
-                <div class="questao-border">
-                    <label><input type="radio" name="a3" value="aranha" required> Tento encontrar um caminho alternativo
-                        para evitar brigas</label>
-                    <label><input type="radio" name="a3" value="esqueleto" required> Gosto de ficar no controle e atacar
-                        onde dói mais.</label>
-                    <label><input type="radio" name="a3" value="creeper" required> Prefiro acabar com tudo de uma vez,
-                        mesmo que seja intenso.</label>
-                    <label><input type="radio" name="a3" value="zumbi" required> Enfrento diretamente, mesmo que leve
-                        tempo.</label>
-                </div>
-            </div>
-            <div class="questao">
-                <h3><strong><span>4.</span> Como é seu comportamento em grupo?</strong></h3>
-                <div class="questao-border">
-                    <label><input type="radio" name="a4" value="aranha" required> Sou independente, mas trabalho bem
-                        quando necessário.</label>
-                    <label><input type="radio" name="a4" value="esqueleto" required> Gosto de observar e direcionar as
-                        pessoas à distância.</label>
-                    <label><input type="radio" name="a4" value="creeper" required> Prefiro ficar sozinho, mas faço
-                        impacto quando apareço.</label>
-                    <label><input type="radio" name="a4" value="zumbi" required> Trabalho melhor em grupo e me sinto
-                        mais forte com amigos.</label>
-                </div>
-            </div>
-            <div class="questao">
-                <h3><strong><span>5.</span> Se você fosse um colega de trabalho, como seria?</strong></h3>
-                <div class="questao-border">
-                    <label><input type="radio" name="a5" value="aranha" required> Criativo e com boas ideias fora do
-                        comum.</label>
-                    <label><input type="radio" name="a5" value="esqueleto" required> Estratégico, eficiente e sempre
-                        focado nos resultados.</label>
-                    <label><input type="radio" name="a5" value="creeper" required> O tipo que chega causando impacto nos
-                        momentos cruciais.</label>
-                    <label><input type="radio" name="a5" value="zumbi" required> Resiliente e confiável, mesmo que às
-                        vezes precise de ajuda.</label>
-                </div>
-            </div>
-            <div class="questao">
-                <h3><strong><span>6.</span> Qual é sua maior força?</strong></h3>
-                <div class="questao-border">
-                    <label><input type="radio" name="a6" value="aranha" required> Adaptabilidade para superar qualquer
-                        obstáculo.</label>
-                    <label><input type="radio" name="a6" value="esqueleto" required> Precisão e capacidade de planejar
-                        com antecedência.</label>
-                    <label><input type="radio" name="a6" value="creeper" required> Intensidade e coragem para enfrentar
-                        desafios difíceis.</label>
-                    <label><input type="radio" name="a6" value="zumbi" required> Persistência e determinação sem
-                        fim.</label>
-                </div>
-            </div>
-            <div class="questao">
-                <h3><strong><span>7.</span> Como você lida com seus medos?</strong></h3>
-                <div class="questao-border">
-                    <label><input type="radio" name="a7" value="aranha" required> Enfrento-os com criatividade e
-                        estratégia.</label>
-                    <label><input type="radio" name="a7" value="esqueleto" required> Dou um passo atrás e analiso antes
-                        de agir.</label>
-                    <label><input type="radio" name="a7" value="creeper" required> Mergulho de cabeça e resolvo o
-                        problema na hora.</label>
-                    <label><input type="radio" name="a7" value="zumbi" required> Persisto até superá-los, mesmo que leve
-                        tempo.</label>
-                </div>
-            </div>
-            <div class="questao">
-                <h3><strong><span>8.</span> Qual é sua relação com o sono?</strong></h3>
-                <div class="questao-border">
-                    <label><input type="radio" name="a8" value="aranha" required> Prefiro a noite e sou mais produtivo
-                        nesse horário.</label>
-                    <label><input type="radio" name="a8" value="esqueleto" required> Sou um pouco noturno, mas preciso
-                        descansar para render bem.</label>
-                    <label><input type="radio" name="a8" value="creeper" required> Não durmo muito, mas quando o faço, é
-                        profundo.</label>
-                    <label><input type="radio" name="a8" value="zumbi" required> Amo dormir e sou mais ativo durante o
-                        dia.</label>
-                </div>
-            </div>
-            <div class="questao">
-                <h3><strong><span>9.</span> Como você gostaria de ser lembrado?</strong></h3>
-                <div class="questao-border">
-                    <label><input type="radio" name="a9" value="aranha" required> Como alguém criativo e
-                        inovador.</label>
-                    <label><input type="radio" name="a9" value="esqueleto" required> Como alguém inteligente e
-                        estratégico.</label>
-                    <label><input type="radio" name="a9" value="creeper" required> Como alguém que deixou uma marca
-                        inesquecível.</label>
-                    <label><input type="radio" name="a9" value="zumbi" required> Como alguém resiliente e leal.</label>
-                </div>
-            </div>
-            <div class="questao">
-                <h3><strong><span>10.</span> Como você reage a mudanças?</strong></h3>
-                <div class="questao-border">
-                    <label><input type="radio" name="a10" value="aranha" required> Sou flexível e me adapto
-                        rapidamente.</label>
-                    <label><input type="radio" name="a10" value="esqueleto" required> Preciso de um pouco de tempo, mas
-                        gosto de ter controle.</label>
-                    <label><input type="radio" name="a10" value="creeper" required> Aceito e tento causar um impacto
-                        positivo nelas.</label>
-                    <label><input type="radio" name="a10" value="zumbi" required> Não gosto muito, mas acabo aceitando
-                        com o tempo.</label>
-                </div>
-            </div>
-            <button type="button" class="jogar" onclick="testar()">Enviar Respostas</button>
-            <div class="contador">
-                <p>Redirecionando em 5 segundos...</p>
-            </div>
-        </form>
-    </main>
-    <script src="script.js"></script>
+
+            <button class="jogar" onclick="sair()">Sair</button>
+        </div>
+    </div>
+    <script src="scriptLogin.js"></script>
+    <audio id="musica" loop>
+        <source src="sons/audio.mp3" type="audio/mpeg">
+    </audio>
 </body>
 
 </html>

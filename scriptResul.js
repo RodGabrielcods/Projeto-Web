@@ -1,5 +1,5 @@
 function login() {
-    window.location.href = 'index.html';
+    window.location.href = 'perguntas.html';
 }
 
 let contAranha = localStorage.getItem('aranha')

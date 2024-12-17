@@ -1,12 +1,3 @@
-let radios = document.querySelectorAll('input[type="radio"]')
-radios.forEach(e => {
-    if (e.checked) {
-        e.parentElement.style.backgroundColor = '#218306'
-        e.parentElement.style.border = '2px outset #17cd07'
-        e.parentElement.style.outline = '2px solid white'
-    }
-})
-
 function testar() {
     let contEsqueleto = 0
     let contCreeper = 0

@@ -5,7 +5,6 @@ function login() {
     window.open('perguntas.html')
     window.close()
 }
-
 function tocarMusica() {
     const audio = document.getElementById('musica');
     audio.muted = false;

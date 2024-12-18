@@ -17,6 +17,10 @@ span {
     font-size: 1.5rem;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: textos;
     margin: 0;
@@ -24,15 +28,16 @@ body {
     background-image: url("img/minecraft_background.jpg");
     background-size: 100%;
     color: #4c4c4c;
+    overflow-x: hidden;
 }
 
 header {
-    background-color: #171615;
+    background-color: #171615; 
     color: white;
     padding: 1.5rem;
     text-align: center;
-    border-bottom: 5px outset #52a535;
-    position: sticky;
+    border-bottom: 5px outset #52a535; 
+    position: sticky; 
 }
 
 header h1 {
@@ -67,7 +72,6 @@ main {
     margin-bottom: 0.5rem;
     color: white;
 }
-
 .questao-border {
     padding-left: 0.6rem;
     padding-right: 0.6rem;
@@ -86,7 +90,6 @@ main {
     margin: 0;
     padding-left: 0.6rem;
 }
-
 h3 img {
     margin-right: 0.5rem;
 }
@@ -103,25 +106,38 @@ label {
     padding: 25px 0 25px 0;
 }
 
-label:hover {
+label:hover{
     background-color: #218306;
     border: 2px outset #17cd07;
     outline: 2px solid white;
 }
 
 input[type="radio"] {
+    appearance: none;
     margin-right: 0.5rem;
     accent-color: #218306;
-    border-radius: 10px;
+    border: 0.3em solid black;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #585658;
+    cursor: pointer;
+}
+
+input[type="radio"]:hover {
+    border-color: white;
+}
+
+input[type="radio"]:checked {
+    background-color: #218306;
 }
 
 .contador {
     font-size: 1.2rem;
-    color: #218306;
+    color: #218306; 
     font-weight: bold;
 }
 
-.jogar {
+.jogar{
     margin-top: 2rem;
     font-size: 1.3rem;
     font-family: title;

@@ -2,7 +2,8 @@ function sair() {
     window.close()
 }
 function login() {
-    window.location.href = 'perguntas.html';
+    window.open('perguntas.html')
+    window.close()
 }
 
 function tocarMusica() {

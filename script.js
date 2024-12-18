@@ -5,6 +5,17 @@ function tocarMusica() {
     audio.play();
 }
 
+const radios = document.querySelectorAll('input[type="radio"]');
+const somClick = document.getElementById('som-click');
+
+radios.forEach(radio => {
+    radio.addEventListener('click', () => {
+        somClick.muted = false;
+        somClick.volume = 1;
+        somClick.play();
+    });
+});
+
 function testar() {
     let contEsqueleto = 0
     let contCreeper = 0
@@ -69,6 +80,7 @@ function testar() {
             if (contador === 0) {
                 clearInterval(intervalo);
                 window.open(pagina + ".html")
+                window.close()
             }
         }, 1000)
     }

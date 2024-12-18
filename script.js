@@ -1,8 +1,9 @@
 function tocarMusica() {
     const audio = document.getElementById('musica');
-    audio.muted = false;
-    audio.volume = 0.5;
-    audio.play();
+    if (audio.paused) {
+        audio.volume = 0.5;
+        audio.play();
+    }
 }
 
 const radios = document.querySelectorAll('input[type="radio"]');
@@ -10,9 +11,13 @@ const somClick = document.getElementById('som-click');
 
 radios.forEach(radio => {
     radio.addEventListener('click', () => {
-        somClick.muted = false;
-        somClick.volume = 1;
-        somClick.play();
+        if (somClick) {
+            somClick.currentTime = 0;
+            somClick.volume = 1;
+            somClick.play().catch(error => {
+                console.error("Erro ao reproduzir o som-click:", error);
+            });
+        }
     });
 });
 

@@ -2,8 +2,7 @@ function sair() {
     window.close()
 }
 function login() {
-    window.open('perguntas.html')
-    window.close()
+    window.location.href = "perguntas.html";
 }
 function tocarMusica() {
     const audio = document.getElementById('musica');

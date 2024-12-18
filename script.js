@@ -79,8 +79,7 @@ function testar() {
 
             if (contador === 0) {
                 clearInterval(intervalo);
-                window.open(pagina + ".html")
-                window.close()
+                window.location.href = pagina + ".html";
             }
         }, 1000)
     } else {

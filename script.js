@@ -83,5 +83,7 @@ function testar() {
                 window.close()
             }
         }, 1000)
+    } else {
+        alert("Responda todas as perguntas!")
     }
 }

@@ -6,7 +6,8 @@ function login() {
 }
 function tocarMusica() {
     const audio = document.getElementById('musica');
-    audio.muted = false;
-    audio.volume = 0.5;
-    audio.play();
+    if (audio.paused) {
+        audio.volume = 0.5;
+        audio.play();
+    }
 }
